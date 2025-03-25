@@ -75,7 +75,7 @@
   /* 浅色模式下的行内 code */
 html[data-theme="light"] .prose code {
   background-color: #ded7d5;
-  color: #d06650;
+  color: #d14720;
   font-weight: 500;
   padding: 2px 6px;
   border-radius: 6px;
