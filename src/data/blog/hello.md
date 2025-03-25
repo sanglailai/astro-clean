@@ -1,6 +1,6 @@
 ---
 title: 我是lxr 🐾
-description: 匆匆忙忙......
+description: 匆匆忙忙的博客......
 pubDatetime: 2024-12-31T10:00:00Z
 featured: true
 tags: ["随笔"]
