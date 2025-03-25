@@ -16,6 +16,7 @@ html[data-theme="light"] {
 }
 
 
+
 html[data-theme="dark"] {
   --background: #212737;
   --foreground: #eaedf3;
