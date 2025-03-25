@@ -7,6 +7,11 @@
   .prose a {
     @apply break-words hover:!text-accent;
   }
+  .prose p {
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  }
+
   .prose thead th:first-child,
   tbody td:first-child,
   tfoot td:first-child {
@@ -24,6 +29,10 @@
   .prose h2#table-of-contents + p {
     @apply hidden;
   }
+  .prose a::after {
+  content: " ↗";
+  font-size: 0.9em;
+  }
 
   /* ===== Code Blocks & Syntax Highlighting ===== */
   pre:has(code) {
@@ -32,8 +41,9 @@
 
   .prose code,
   .prose blockquote {
-    @apply break-words;
+  @apply rounded-md bg-muted/30 p-4 border-l-4 border-accent;
   }
+
 
   .prose table code {
     /* add line breaks whenever necessary for codes under table */
