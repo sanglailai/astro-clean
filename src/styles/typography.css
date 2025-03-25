@@ -72,28 +72,25 @@
     text-decoration: var(--shiki-dark-text-decoration) !important;
   }
 }
-    /* 浅色模式 */
+  /* 浅色模式下的行内 code */
 html[data-theme="light"] .prose code {
-  background-color: transparent;
-  color: #444;
-  font-style: italic;
+  background-color: #fff5f5;
+  color: #c53030;
   font-weight: 500;
-  padding: 0;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 1em;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.95em;
 }
 
-/* 深色模式 */
+/* 深色模式下的行内 code */
 html[data-theme="dark"] .prose code {
-  background-color: transparent;
-  color: #d1d5db;
-  font-style: italic;
+  background-color: #3c1e1e;
+  color: #feb2b2;
   font-weight: 500;
-  padding: 0;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 1em;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.95em;
 }
+
 
 
