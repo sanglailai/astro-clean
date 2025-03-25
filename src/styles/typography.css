@@ -74,8 +74,8 @@
 }
   /* 浅色模式下的行内 code */
 html[data-theme="light"] .prose code {
-  background-color: #fff5f5;
-  color: #c53030;
+  background-color: #ded7d5;
+  color: #d06650;
   font-weight: 500;
   padding: 2px 6px;
   border-radius: 6px;
@@ -84,8 +84,8 @@ html[data-theme="light"] .prose code {
 
 /* 深色模式下的行内 code */
 html[data-theme="dark"] .prose code {
-  background-color: #3c1e1e;
-  color: #feb2b2;
+  background-color: #f2ebe9;
+  color: #e3704f;
   font-weight: 500;
   padding: 2px 6px;
   border-radius: 6px;
