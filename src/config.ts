@@ -6,7 +6,7 @@ export const SITE = {
   title: "Lailai's Blog",
   ogImage: "https://emojicdn.elk.sh/🐶", // emoji 风格头像
   lightAndDarkMode: true,
-  postPerIndex: 4,
+  postPerIndex: 10,
   postPerPage: 4,
   scheduledPostMargin: 15 * 60 * 1000,
   showArchives: true,
