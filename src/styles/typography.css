@@ -39,7 +39,15 @@
     @apply border border-border;
   }
 
-  .prose code,
+  .prose code {
+  background-color: rgba(0, 0, 0, 0.05); /* 可根据暗色模式做替换 */
+  color: inherit;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 0.95em;
+  font-style: italic;
+  }
+
   .prose blockquote {
   @apply rounded-md bg-muted/30 p-4 border-l-4 border-accent;
   }
@@ -64,3 +72,23 @@
     text-decoration: var(--shiki-dark-text-decoration) !important;
   }
 }
+    /* 浅色模式下的行内 code 样式 */
+html[data-theme="light"] .prose code {
+  background-color: #f4f4f4;
+  color: #333;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 0.95em;
+  font-style: italic;
+}
+
+/* 深色模式下的行内 code 样式 */
+html[data-theme="dark"] .prose code {
+  background-color: #2e2e3a;
+  color: #eee;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 0.95em;
+  font-style: italic;
+}
+
