@@ -2,6 +2,7 @@
 title: 我是lxr 🐾
 description: 匆匆忙忙......
 pubDate: 2025-03-25
+featured: true
 tags: ["随笔","开始"]
 ---
 
