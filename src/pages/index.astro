@@ -11,19 +11,15 @@ import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import { SITE } from "@/config";
 
 const posts = await getCollection("blog");
-
-const sortedPosts = getSortedPosts(posts);
-const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
-const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+const allPosts = getSortedPosts(posts);
 ---
-
 
 <Layout>
   <Header />
   <main id="main-content" data-layout="index">
     <section id="hero" class="pt-8 pb-6">
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-       （)´д`(）  🐾
+        （)´д`(）  🐾
       </h1>
       <p class="mb-2 text-lg text-secondary">
         这里记录我的思考、探索与生活。
@@ -32,39 +28,18 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
     <Hr />
 
-    {
-      featuredPosts.length > 0 && (
-        <>
-          <section id="featured" class="pt-12 pb-6">
-            <h2 class="text-2xl font-semibold tracking-wide">Featured</h2>
-            <ul>
-              {featuredPosts.map(data => (
-                <Card variant="h3" {...data} />
-              ))}
-            </ul>
-          </section>
-          {recentPosts.length > 0 && <Hr />}
-        </>
-      )
-    }
-
-    {
-      recentPosts.length > 0 && (
-        <section id="recent-posts" class="pt-12 pb-6">
-          <h2 class="text-2xl font-semibold tracking-wide">Recent Posts</h2>
-          <ul>
-            {recentPosts.map(
-              (data, index) =>
-                index < SITE.postPerIndex && <Card variant="h3" {...data} />
-            )}
-          </ul>
-        </section>
-      )
-    }
+    <section id="all-posts" class="pt-12 pb-6">
+      <h2 class="text-2xl font-semibold tracking-wide">最新文章</h2>
+      <ul>
+        {allPosts.slice(0, SITE.postPerIndex).map(data => (
+          <Card variant="h3" {...data} />
+        ))}
+      </ul>
+    </section>
 
     <div class="my-8 text-center">
       <LinkButton href="/posts/">
-        All Posts
+        查看全部文章
         <IconArrowRight class="inline-block" />
       </LinkButton>
     </div>
