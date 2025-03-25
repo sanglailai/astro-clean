@@ -61,7 +61,7 @@ html[data-theme="dark"] {
   }
   section,
   footer {
-    @apply mx-auto max-w-3xl px-4;
+    @apply mx-auto max-w-screen-md sm:max-w-screen-lg lg:max-w-screen-xl px-6;
   }
   ::-webkit-scrollbar {
   width: 8px;
