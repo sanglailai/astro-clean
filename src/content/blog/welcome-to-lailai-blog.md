@@ -1,7 +1,8 @@
 ---
 title: 我是lxr 🐾
 description: 匆匆忙忙......
-pubDatetime: 2025-03-25T10:00:00Z
+pubDatetime: 2024-12-31T10:00:00Z
+featured: true
 tags: ["随笔","开始"]
 heroImage: ""
 ---
