@@ -19,4 +19,5 @@ export const SITE = {
   dynamicOgImage: true,
   lang: "zh",
   timezone: "Asia/Shanghai",
+  
 } as const;
