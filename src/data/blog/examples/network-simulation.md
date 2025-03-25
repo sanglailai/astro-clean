@@ -1,6 +1,6 @@
 ---
 title: 模拟企业网络全栈仿真实验
-author: lxr
+author: r
 pubDatetime: 2024-03-15T10:00:00Z
 slug: network-simulation
 featured: true
