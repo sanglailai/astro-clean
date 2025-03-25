@@ -19,11 +19,19 @@ const allPosts = getSortedPosts(posts);
   <main id="main-content" data-layout="index">
     <section id="hero" class="pt-8 pb-6">
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        （)´д`(）  🐾
+        （)´д`(） 🐾
       </h1>
       <p class="mb-2 text-lg text-secondary">
         这里记录我的思考、探索与生活。
       </p>
+
+      <!-- 分类按钮区域 -->
+      <div class="mt-4 flex flex-wrap gap-2 items-center">
+        <span class="text-sm text-muted">分类：</span>
+        <a href="/tags/技术/" class="px-3 py-1 text-sm rounded-full bg-muted/40 hover:bg-accent hover:text-white transition-all">💻 技术</a>
+        <a href="/tags/随笔/" class="px-3 py-1 text-sm rounded-full bg-muted/40 hover:bg-accent hover:text-white transition-all">✍️ 随笔</a>
+        <a href="/tags/生活/" class="px-3 py-1 text-sm rounded-full bg-muted/40 hover:bg-accent hover:text-white transition-all">🐾 生活</a>
+      </div>
     </section>
 
     <Hr />
