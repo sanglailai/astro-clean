@@ -72,23 +72,28 @@
     text-decoration: var(--shiki-dark-text-decoration) !important;
   }
 }
-    /* 浅色模式下的行内 code 样式 */
+    /* 浅色模式 */
 html[data-theme="light"] .prose code {
-  background-color: #f4f4f4;
-  color: #333;
-  border-radius: 4px;
-  padding: 2px 4px;
-  font-size: 0.95em;
+  background-color: transparent;
+  color: #444;
   font-style: italic;
+  font-weight: 500;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 1em;
 }
 
-/* 深色模式下的行内 code 样式 */
+/* 深色模式 */
 html[data-theme="dark"] .prose code {
-  background-color: #2e2e3a;
-  color: #eee;
-  border-radius: 4px;
-  padding: 2px 4px;
-  font-size: 0.95em;
+  background-color: transparent;
+  color: #d1d5db;
   font-style: italic;
+  font-weight: 500;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 1em;
 }
+
 
